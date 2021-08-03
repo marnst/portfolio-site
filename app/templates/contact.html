@@ -1,0 +1,62 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+
+
+  {% if success %}
+    <div class="sent-container">
+      <div class="contact-container">
+        <h1 id='contact-header'>Contact Me</h1>
+      </div>
+      <p id=sent>Thanks for your message! I'll try my best to get back to you shortly. Click
+       <a class='in-text-link' href="{{ url_for('contact') }}">here</a> to return to the Contact Form.</p>
+    </div>
+
+
+
+
+
+  {% else %}
+  <div class="contact-container">
+    <h1 id='contact-header'>Contact Me</h1>
+    <h3 id='contact-intro'>If you'd like to get in contact with me for any reason, you can email me
+    directly, message me on LinkedIn (linked above), or fill out this contact form. I'll do my best to get back to you as soon as possible! </h3>
+  </div>
+
+    <div class="flash-container">
+      {% for message in form.name.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.email.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.message.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+    </div>
+
+
+
+
+
+    <div class="contact-form">
+      <form action="{{ url_for('contact') }}" method=post novalidate='novalidate'>
+        {{ form.hidden_tag() }}
+
+
+        <input class="input-box" name="name" required="" type="text" value="" placeholder="Name" >
+        <input class='input-box' name="email" required="" type="text" value="" placeholder="Email">
+        <input class='input-box' name="subject" required="" type="text" value="" placeholder="Subject (Optional)">
+        <textarea id="message" name="message" required="" placeholder='Message'></textarea>
+
+        {{ form.submit }}
+
+      </form>
+    </div>
+
+
+
+  {% endif %}
+{% endblock %}

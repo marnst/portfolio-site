@@ -1,0 +1,219 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+
+<div class="home-container">
+  <div class="section">
+
+
+    <div class="home-left">
+      <h1>Hi, I'm Matthew Arnst -- </h1>
+      <h2>A recent UC Berkeley graduate with an interest in software engineering and data science/analytics.
+        <br>
+        <br>
+      Feel free to navigate this website and learn more about me! </h2>
+    </div>
+
+
+
+    <div class="home-right">
+      <img id=home-portrait src="{{url_for('static', filename='images/Portrait.jpg')}}" />
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="section2">
+    <h1>Recent Projects</h1>
+
+    <div class="card-container">
+
+      <div class="card">
+        <img class=card-img src="{{url_for('static', filename='images/website.png')}}" style="width:100%">
+
+        <div class="container">
+          <h4><b>This Website</b></h4>
+          <p>My first real, hands on experience with front-end web development and Flask.</p>
+          <ul>
+            <li> <div class="tag">
+              <p>Flask</p>
+            </div> </li>
+            <li> <div class="tag">
+              <p>JavaScript</p>
+            </div> </li>
+            <li> <div class="tag">
+              <p>HTML</p>
+            </div> </li>
+            <li> <div class="tag">
+              <p>CSS</p>
+            </div> </li>
+          </ul>
+          <button data-modal-target="#personal-portfolio">Read More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class=card-img src="{{url_for('static', filename='images/skfinal3.png')}}" style="width:100%">
+
+        <div class="container">
+          <h4><b>Sno-King Data Project</b></h4>
+          <p>A data insights project for nonprofit Ice Sports company, SNO-King Ice Arenas.</p>
+          <ul>
+            <li> <div class="tag">
+              <p>Python</p>
+            </div> </li>
+            <li> <div class="tag">
+              <p>pandas</p>
+            </div> </li>
+            <li> <div class="tag">
+              <p>seaborn</p>
+            </div> </li>
+          </ul>
+          <button data-modal-target="#sno-king">Read More</button>
+
+
+
+
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img class=card-img src="{{url_for('static', filename='images/action-map.png')}}" style="width:100%">
+
+        <div class="container">
+          <h4><b>ActionMap</b></h4>
+          <p>A platform for voters to share ideas/opinions and connect with the progressive community.</p>
+          <ul>
+            <li> <div class="tag">
+              <p>Rails</p>
+            </div> </li>
+            <li> <div class="tag">
+              <p>JavaScript</p>
+            </div> </li>
+            <li> <div class="tag">
+              <p>HTML</p>
+            </div> </li>
+            <li> <div class="tag">
+              <p>CSS</p>
+            </div> </li>
+          </ul>
+          <button data-modal-target="#actionmap">Read More</button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <div class="modal" id="sno-king">
+    <div class="modal-header">
+      <h1>Sno-King Data Project</h1>
+      <button data-close-button  class='close-button'>&times;</button>
+
+      </div>
+      <div class="modal-body">
+        In the spring semester of my senior year, I enrolled in the Data Science Discovery program, which
+        connects Berkeley Data Science students with local nonprofits, researchers, and startups.
+        Through the program, I worked with four other students on a semester-long project for <a id='sklink' target = "_blank" href="https://snokingicearenas.com/">Sno-King Ice Arenas</a>,
+        a nonprofit Ice Sports Management company that had been hit hard by COVID-19 and mandatory quarantine.
+        The company, which owns and operates several large scale ice rinks in the greater Seattle area, had to shut
+        down all its facilities and programs (youth hockey, figure skating, classes, etc.) for the majority of 2020,
+        and lost out on a massive amount of its expected revenue.
+        <br>
+        <br>
+        As plans to reopen went underway in early 2021, we cleaned and examined all the untapped data that Sno-King had
+        collected over the past few years, compiled a series of detailed reports, and recommended a new data
+        management strategy for the company moving forward. I personally analyzed all donation/fundraiser data
+        and helped indentify the demographics of SNO-King's core customers/donors, as well as those who were on the "fringe"
+        and may be converted to donate more (and more often). Our efforts helped SNO-King create a more detailed roadmap for reopening
+        and many of the insights we provided are still being used in the company's decision making today.
+        <br>
+        <br>
+        For the bulk of our cleaning and analysis, we used the Python programming language and the pandas data
+        manipulation library. We also used seaborn to create our data visualizations, some of which were touched
+        up in Adobe Illustrator.
+      </div>
+
+
+    </div>
+
+    <div class="modal" id="personal-portfolio">
+      <div class="modal-header">
+        <h1>My Personal Portfolio Website</h1>
+        <button data-close-button  class='close-button'>&times;</button>
+
+        </div>
+        <div class="modal-body">
+          After finishing undergrad, I created this portfolio website to learn more about web development and to get experience
+          deploying a web application I built completely myself from front-end to back-end. I will continue to update it
+          with new features (blog, styling, interactive projects, etc) and progress reports as I build my portfolio.
+          In the process of constructing this website, I became much more familiar with front-end technologies and was
+          able to build something (albeit simple) from scratch, customizing everything to my liking.
+          <br>
+          <br>
+          When I decided I wanted a Contact Page that could relay messages directly to my email, I chose to use Flask
+          as my web framework because Python is definitely my favorite language and the one I'm most comfortable working in.
+          The reason I opted for Flask over Django is because it's lightweight and leaves me the room and ability
+          to make more (potentially major) changes to my website over time. However, I've never used Flask before so I had to spend a decent
+          amount of time learning and getting used to its structure. I also used JavaScript for the dropdown menu on mobile view and for opening and closing
+          project descriptions.
+        </div>
+
+
+      </div>
+
+      <div class="modal" id="actionmap">
+        <div class="modal-header">
+          <h1>ActionMap</h1>
+          <button data-close-button  class='close-button'>&times;</button>
+
+          </div>
+          <div class="modal-body">
+            "ActionMap" was the penultimate project for CS169, Berkeley's intro to Software Engineering class.
+            I worked on it during the summer 2020 session with one other student. Essentially, ActionMap is a
+            platform that enables users to identify political representatives in their area and contribute commentary
+            on them and the ideas they represent. Typical user flow starts with a landing page containing an interactive map of the
+            United States. A user then clicks on their respective state, which renders a new counties map for that state. From there,
+            clicking on a given county brings up a list of political representatives in that area that users are able to click on and
+            read more about. Aside from viewing the basic information of these representatives (picture, party, age, email, etc.), users are also able to read, post, or comment
+            on different web articles written about them. Users may also find representatives using the search bar, post/find information about
+            events in their area, and create an account by signing in through either Google or GitHub.
+            <br>
+            <br>
+            We used Rails as the webframework for this application, following general MVC structure that was laid out for us.
+            The bulk of the interactive map was rendered using JavaScript and TopoJSON, and we also used JQuery to listen
+            to and react to DOM events. For each political representative's profile page, information was provided
+            using the Google Civic Information API. As far as styling goes, we used Bootstrap for a large amount of our app's elements.
+            <br>
+            <br>
+
+            Ultimately, we deployed ActionMap on Heroku, and you can check it out <a href="https://young-fortress-14411.herokuapp.com" target = "_blank">Here</a>!
+
+
+          </div>
+
+
+        </div>
+
+
+
+
+    <div id='overlay'></div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,728 @@
+*,
+*:before,
+*:after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  margin:0%;
+  padding:0%;
+  background-color: #191A1D;
+}
+
+hr{
+  margin: auto;
+
+  border: 1px solid #ABABAB;
+}
+
+.navbar{
+  padding-top: 20px;
+  width: 100%;
+  background-color: #191A1D;
+  color: #191A1D;
+  float:right;
+}
+
+.navbar .navbar-content{
+  max-width: 1500px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: auto;
+}
+
+
+
+
+.navbar-crumb{
+  float: left;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  padding: 0.9em 0.7em;
+  color: white;
+  padding-left: 30px;
+  position: relative;
+
+}
+
+
+.navbar-crumb:after{
+  content: "";
+  position: absolute;
+  background-color: #FF6934;
+  height: 3px;
+  width: 80%;
+
+  transition:0.3s;
+  left: 27px;
+  bottom: 11px;
+}
+
+
+
+.navbar-nav{
+  margin:0%;
+  float: right;
+  display: inline-flex;
+  padding-right: 20px;
+
+}
+
+.navbar .navbar-nav .nav-icon {
+  display: inline-flex;
+  list-style: none;
+
+
+}
+
+
+
+.navbar .navbar-nav .nav-item {
+  display: inline-flex;
+  list-style: none;
+  vertical-align: center;
+}
+
+.navbar-nav .nav-icon a {
+  fill: #a0a0a0;
+  padding: 1.1em 0.7em;
+  position: relative;
+}
+
+.navbar-nav .nav-item a{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding: 1.2em 0.7em;
+  color: #a0a0a0;
+  transition: .4s ease-out;
+  position: relative;
+}
+
+.navbar-nav .nav-item a:after{
+  content: "";
+  position:absolute;
+  background-color: #FF6934;
+  height: 3px;
+  width: 0;
+  left: 0px;
+  bottom: 10px;
+  transition:0.3s;
+}
+
+.navbar-nav .nav-item a:hover:after{
+  width: 100%;
+}
+
+.navbar-nav .nav-item a:hover{
+  color: white;
+  transition: .4s ease-out;
+}
+
+i {
+  width: 10px;
+  height: 10px;
+}
+
+.toggle-collapse{
+  float: right;
+  width: 60px;
+  height: 34px;
+  margin: 1.2em 2.3em;
+  background-color: transparent;
+  color: #a0a0a0;
+  border: 2px solid #a0a0a0;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+  transition: .3s;
+}
+
+.toggle-collapse:hover{
+  color: white;
+  transition: .3s linear;
+  border: 2px solid #FF6934;
+}
+
+
+
+.navbar-nav .nav-icon a:after{
+  content: "";
+  position:absolute;
+  background-color: #FF6934;
+  height: 3px;
+  width: 0;
+  left: 0px;
+  bottom: 10px;
+  transition:0.3s;
+}
+
+.navbar-nav .nav-icon a:hover:after{
+  width: 100%;
+}
+
+.navbar-nav .nav-icon a:hover{
+  fill: white;
+}
+
+.icon .navIcons {
+
+  padding: 2em;
+  transition: 0.4s;
+}
+
+
+
+
+
+.home-container {
+  max-width: 1300px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 200px;
+  margin: auto;
+
+}
+.section {
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.section2 {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.card-container {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-left {
+  float: left;
+  width: 45%;
+  margin-right:10%;
+
+
+}
+
+.home-left h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 45px;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 10%;
+  color: white;
+}
+
+.home-left h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: #ABABAB;
+  line-height: 1.5;
+  font-size: 28px;
+}
+
+.home-container .home-right {
+  float: left;
+  width: 45%;
+}
+
+#home-portrait {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: -20px -20px rgb(160,160,160,0.3);
+
+
+
+}
+
+.section2 h1 {
+  font-family: 'Rubik';
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  background-color: white;
+
+  width: 30%;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  box-shadow: 0 10px 0 0 #FF6934;
+  transition: 0.3s;
+  border-radius: 5px;
+
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 20px 20px #FF6834;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 20px;
+
+}
+
+.container button{
+  border: 0;
+  background: #323233;
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
+  width: 100%;
+  font-family: 'Rubik';
+}
+
+.container button:hover{
+  background-color: #FF6834;
+}
+
+
+.card-img{
+  border-radius: 5px 5px 0 0;
+}
+
+.container h4{
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.container p{
+  font-family: 'Rubik';
+  font-size: 18px;
+
+}
+
+.tag {
+  background-color: #EDF2F7;
+  padding-top:5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.tag p {
+  font-weight:500;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.container ul{
+  display:flex;
+  padding-top: 20px;
+}
+
+.container li{
+  list-style-type: none;
+  margin-right: 5px;
+}
+
+
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-out;
+  background-color: white;
+  border-radius: 10px;
+  z-index:10;
+  padding: 30px;
+  width: 80%;
+  max-height: 80vh;
+  overflow-y: auto;
+  max-width: 1300px;
+}
+
+#personal-portfolio {
+  transform: translate(-95%, 0%)  scale(0);
+}
+
+#personal-portfolio.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+#actionmap {
+  transform: translate(-5%, 0%)  scale(0);
+}
+
+#actionmap.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: 'Rubik';
+}
+
+.modal-body {
+  font-family: 'Rubik';
+  font-weight: 300;
+
+  line-height: 1.5;
+  font-size: 22px;
+}
+
+.close-button {
+  padding: 0px 11px 4px;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 50;
+  background-color: #323233;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-button:hover{
+  background-color: #FF6834;
+
+
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  background-color: rgb(0,0,0,0.85);
+  pointer-events: none;
+  transition: 300ms;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+.contact-container {
+  font-family: 'Rubik';
+  color: white;
+  text-align: center;
+  padding-top:150px;
+  font-size: 22px;
+  width: 600px;
+  max-width: 80%;
+  margin:auto;
+
+}
+
+#contact-intro{
+  margin-top: 20px;
+  font-weight: 300;
+  color: #ABABAB;
+  font-size: 19px;
+  line-height: 1.5;
+
+}
+
+
+
+
+.flash-container {
+  width: 600px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.flash {
+  font-family: "Helvetica", sans-serif;
+
+
+  width: 100%;
+  background-color: #FBB0B0;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align:center;
+  border-radius: 10px;
+  opacity:50%;
+}
+
+
+.contact-form{
+  width: 600px;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.input-box {
+  width:100%;
+
+  display: block;
+  height: 40px;
+
+  border-radius:10px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right:10px;
+  background-color: #424345;
+  border: 0px;
+  color: white;
+
+
+
+}
+
+#message {
+  width: 100%;
+
+  display: block;
+  height: 150px;
+  border: 2px solid #777;
+  border-radius:10px;
+  margin-top:20px;
+  padding:10px;
+  font-family: Helvetica;
+  background-color: #424345;
+  border: 0px;
+  color:white;
+}
+
+#submit {
+  border: 0;
+  background: #323233;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top:20px;
+  float:right;
+  font-family: 'Rubik';
+}
+
+#submit:hover{
+  background-color: #FF6934;
+}
+
+#sent{
+  font-family: 'Rubik';
+  color: white;
+  text-align: center;
+  background-color: rgb(9,128,1,0.5);
+  border-radius: 20px;
+  width: 600px;
+  max-width: 80%;
+  margin:auto;
+  margin-top: 20px;
+
+  padding: 20px;
+  font-size: 20px;
+
+}
+
+.about-container {
+  font-family: 'Rubik';
+  color: white;
+
+  padding-top:150px;
+  font-size: 22px;
+  width: 90%;
+  max-width: 1100px;
+  margin:auto;
+  margin-bottom: 160px;
+}
+
+#gradpic {
+  width: 100%;
+  box-shadow: -20px -20px rgb(160,160,160,0.3);
+  border-radius: 5px;
+}
+
+#about-head{
+  font-family: 'Rubik';
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#about-me{
+  font-family: 'Rubik';
+  font-weight: 300;
+  color: #ABABAB;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.about-left{
+  float:left;
+  width: 40%;
+  margin-right: 5%;
+}
+
+.about-right{
+
+}
+
+#resume{
+
+  background-color: #323233;
+  padding: 10px 40px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 30px;
+  margin-top: 30px;
+  transition: 0.5s;
+  text-decoration:none;
+  float:left;
+  font-family: 'Rubik';
+}
+
+#resume:hover{
+  background-color: #FF6934;
+}
+
+
+@media screen and (max-width:600px){
+  .navbar-crumb{
+    display: inline-block;
+    padding-left:0px;
+
+  }
+
+  .navbar-crumb:after{
+    width: 91%;
+    left: 0px;
+  }
+
+  .toggle-collapse{
+    display: inline-block;
+
+    margin: 16px 0px;
+  }
+
+  .navbar-nav{
+    color: white;
+    padding:0%;
+    float: none;
+    display: block;
+
+  }
+
+  .navbar{
+    padding-top:5px;
+    display: block;
+  }
+
+  .navbar .navbar-nav .nav-item{
+    display: block;
+    list-style: none;
+    padding: 1em;
+  }
+
+  .navbar .navbar-nav .nav-icon{
+    display: block;
+    padding: 1em;
+
+  }
+
+  .navbar-content{
+    float:left;
+    padding-right:0px;
+    padding-left:0px;
+    width: 100%;
+    margin: 0;
+  }
+
+
+
+  .navbar-collapse{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    height: 0vh;
+    transition: all 499ms ease;
+    float: none;
+  }
+
+  .collapse{
+    height: 100vh;
+  }
+
+  .home-container{
+    padding-top: 25%;
+    padding-right:25px;
+    padding-left:25px;
+
+  }
+
+  .card-container{
+    display: block;
+    float: none;
+  }
+
+  .section {
+    display: block;
+  }
+
+  .home-left {
+    float:none;
+    margin: 0;
+    width: 100%;
+    margin-top:0;
+
+  }
+  .home-left h1 {
+    font-size: 40px;
+
+  }
+
+  .home-right {
+    margin:auto;
+  }
+
+
+
+  .home-container {
+    display: block;
+  }
+
+  .card{
+    width: 100%;
+
+    margin-bottom: 30%;
+  }
+
+
+
+
+
+
+}

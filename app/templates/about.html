@@ -1,0 +1,35 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+
+<div class="about-container">
+  <h1 id='about-head'>About Me</h1>
+  <div class="about-left">
+    <img id='gradpic' src="{{url_for('static', filename='images/gradpic.jpeg')}}" alt="">
+  </div>
+
+  <div class="about-right">
+    <p id='about-me'> In May 2021 I graduated from the University of California, Berkeley with a
+    B.A. in Data Science and a Domain Emphasis in Business and Industrial Analytics. During my time
+    as an undergrad, I was a member the Berkeley NCAA Division 1 Baseball Data Analytics team, participated in
+    Berkeley's new Data Science Discovery Program, and played on the Cal Club Baseball team, serving as the Executive
+    Vice President.
+    <br>
+    <br>
+    Since graduation, I've been spending my summer in my hometown of Pasadena, CA, where I've been
+    learning about full-stack web development, working through algorithm/data structure-related questions on LeetCode,
+    and preparing to start my career. I'm also an avid golfer, enjoy watching sports, and
+    just recently started running and working out.
+    </p>
+
+    <a id='resume' href="https://drive.google.com/file/d/1nP45Gc9XDIw6YPGbb88uYH4YMwk4ynss/view?usp=sharing" target = "_blank">Resume</a>
+
+  </div>
+
+
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,76 @@
+h1 {
+  font-family: sans-serif;
+
+  text-align: center;
+}
+
+h3 {
+  text-indent: 20px;
+  font-family: sans-serif;
+
+}
+a {
+  font-family: sans-serif;
+
+}
+
+img:hover {
+  color: #3D275F;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.navBar #crumb {
+  float: left;
+  padding: 0px;
+}
+
+
+p {
+
+  text-indent: 20px;
+  font-size: 15px;
+  font-family: monospace;
+
+}
+
+
+
+.icon:hover .navIcons {
+  fill: green;
+  transition: 0.35s ease-out;
+}
+
+.icon .navIcons {
+  transition: 0.5s ease-out;
+}
+
+.navBar ul {
+  list-style-type: none;
+
+}
+.navBar li {
+  float: right
+}
+
+.navBar a {
+  transition: .4s ease-out;
+  text-decoration: none;
+  color: #BABABA;
+  padding: 10px;
+}
+
+.navBar a:visited {
+  color: #BABABA;
+}
+
+.navBar a:hover {
+  color:green;
+  transition: .4s ease-out;
+}
+
+#portrait {
+  padding-left: 100px;
+}
