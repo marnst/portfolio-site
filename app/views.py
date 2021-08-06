@@ -5,15 +5,15 @@ from flask_mail import Message, Mail
 import os
 
 mail = Mail()
-#app.secret_key = os.getenv('SECRET_KEY')
+
 app.secret_key = 'development key'
 
 app.config["MAIL_SERVER"] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
 app.config['MAIL_USERNAME'] = 'arnstbot@gmail.com'
-#app.config['MAIL_PASSWORD'] = os.getenv('PASSWORD')
-app.config['MAIL_PASSWORD'] = "Valhalla8008135"
+app.config['MAIL_PASSWORD'] = os.getenv('PASSWORD')
+
 
 mail.init_app(app)
 
