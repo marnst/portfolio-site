@@ -250,6 +250,7 @@ i {
   padding-bottom: 40px;
   text-align: center;
   margin-bottom:20px;
+  font-size: 40px;
 }
 
 .card {
@@ -329,13 +330,16 @@ i {
 }
 
 .container ul{
-  display:flex;
+  display:inline-flex;
   padding-top: 20px;
+  width: 100%;
+  flex-flow: row wrap;
 }
 
 .container li{
   list-style-type: none;
   margin-right: 5px;
+
 }
 
 
@@ -437,7 +441,7 @@ i {
   padding-top:150px;
   font-size: 22px;
   width: 600px;
-  max-width: 80%;
+  max-width: 90%;
   margin:auto;
 
 }
@@ -477,7 +481,7 @@ i {
 
 .contact-form{
   width: 600px;
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
   margin-bottom: 100px;
 }
@@ -552,6 +556,7 @@ i {
   font-family: 'Rubik';
   color: white;
 
+
   padding-top:150px;
   font-size: 22px;
   width: 90%;
@@ -608,9 +613,18 @@ i {
 #resume:hover{
   background-color: #FF6934;
 }
+@media screen and (min-width:800px) and (max-width:1200px){
+  .home-container h1{
+    padding-top: 0px;
+  }
+
+  .section2{
+    margin-top: 50px;
+  }
+}
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
   .navbar-crumb{
     display: inline-block;
     padding-left:0px;
@@ -646,6 +660,9 @@ i {
     list-style: none;
     padding: 1em;
   }
+  .navbar .navbar-nav .nav-item a{
+    font-size: 18px;
+  }
 
   .navbar .navbar-nav .nav-icon{
     display: block;
@@ -677,9 +694,10 @@ i {
   }
 
   .home-container{
-    padding-top: 25%;
+    padding-top: 15%;
     padding-right:25px;
     padding-left:25px;
+    display: block;
 
   }
 
@@ -690,6 +708,16 @@ i {
 
   .section {
     display: block;
+    margin-bottom: 40px;
+  }
+
+  .section2 {
+    display: block;
+  }
+
+  .section2 h1{
+    font-size: 36px;
+    margin-bottom: 0px;
   }
 
   .home-left {
@@ -698,14 +726,22 @@ i {
     width: 100%;
     margin-top:0;
 
+
   }
   .home-left h1 {
     font-size: 40px;
 
   }
 
-  .home-right {
-    margin:auto;
+  .home-left h2 {
+    font-size: 20px;
+  }
+
+  .home-container .home-right {
+    float: none;
+    width: 90%;
+    margin: auto;
+    margin-top: 15%;
   }
 
 
@@ -717,10 +753,78 @@ i {
   .card{
     width: 100%;
 
-    margin-bottom: 30%;
+    margin-bottom: 20%;
+  }
+
+  button{
+    font-size: 15px;
+  }
+
+  .about-container{
+    padding-top: 100px;
+    display: block;
+    width: 90%;
+  }
+
+  #about-head{
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .about-left{
+    width: 80%;
+    float:none;
+    margin: auto;
+    margin-bottom: 30px;
+
+
+  }
+
+  .about-right{
+    margin-left: 1%;
+    margin-right:1%;
+  }
+
+  #about-me{
+    font-size: 18px;
+  }
+
+  .contact-container{
+    padding-top:100px;
+
+  }
+
+  #contact-intro{
+    margin-top:10px;
+  }
+
+  #submit{
+    font-size: 14px;
   }
 
 
+  .modal{
+    width:95%;
+    max-height: 80vh;
+    padding: 20px;
+
+  }
+
+  .modal-header h1{
+    font-size: 28px;
+  }
+
+  .modal-body{
+    font-size:18px;
+  }
+
+  .close-button{
+    height: 25%;
+    padding-left: 8px;
+    padding-right:8px;
+
+
+  }
 
 
 
